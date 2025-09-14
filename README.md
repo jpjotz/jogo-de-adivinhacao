@@ -5,6 +5,14 @@ Tente sua sorte e adivinhe o número entre 1 e 100!
 
 Projeto feito com base nas aulas do site [Mimo](https://mimo.org)
 
+# 📇 Índice
+- [🎮 Jogue Aqui](https://github.com/jpjotz/jogo-de-adivinhacao?tab=readme-ov-file#-jogue-aqui)
+- [📷 Screenshots](https://github.com/jpjotz/jogo-de-adivinhacao?tab=readme-ov-file#-screenshots)
+- [💻 Stack utilizada](https://github.com/jpjotz/jogo-de-adivinhacao?tab=readme-ov-file#-stack-utilizada)
+- [🔧 Funcionalidades](https://github.com/jpjotz/jogo-de-adivinhacao?tab=readme-ov-file#-funcionalidades)
+- [🎯 Roadmap](https://github.com/jpjotz/jogo-de-adivinhacao?tab=readme-ov-file#-roadmap)
+- [📚 Aprendizado](https://github.com/jpjotz/jogo-de-adivinhacao?tab=readme-ov-file#-aprendizado)
+
 
 # 🎮 Jogue aqui:
 
@@ -38,6 +46,7 @@ https://4j63lv.mimo.run/index.html
 - Código base do projeto: ✅
 - Sistema de reínicio de jogo: ✅
 - Sistema de sequência de vitórias: ✅
-
-
 - Sistema de Leaderboard : 🟡 (Em Breve)
+
+## 📚 Aprendizado
+Com esse projeto, pude aplicar os conhecimentos que adquiri ao longo de algumas semanas no estudo de HTML5, CSS3 e JavaScript, utilizando conceitos de Local Storage, remoção de elementos por ID e coleta de informações de elementos por ID.
