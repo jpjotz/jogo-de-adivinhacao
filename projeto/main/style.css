@@ -1,0 +1,136 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: gold;
+}
+
+.submitButton{
+  background-color: rgb(2, 180, 2);
+  color: white;
+  margin: 0;
+  width: 320px;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+  border: solid 1px rgb(2, 180, 2);
+}
+
+.submitButton:hover{
+  background-color: white;
+  color: rgb(2, 180, 2);
+  border: solid 2px rgb(2, 180, 2);
+}
+
+#guess{
+  width: 300px;
+  height: 40px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.container{
+  margin-top: 100px;
+  display: block;
+  background-color: white;
+  text-align: center;
+  width: 320px;
+  max-width: 90%;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+
+.reload{
+  background-color: blue;
+  color: white;
+  margin: 0;
+  width: 320px;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border: solid 1px blue;
+}
+
+.reload:hover{
+  background-color: white;
+  color: blue;
+  border: solid 2px blue;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #222222a0;
+  color: white;
+  text-align: center;
+  padding: 1px;
+  height: 40px;
+}
+
+i{
+  margin: 5px;
+}
+
+.shareButton{
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  width: 100px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: black;
+  font-size: 37px;
+  cursor: pointer;
+}
+
+#shareText{
+  position: absolute;
+  left: 100px;
+  font-weight: bold;
+  display: none;
+}
+
+.streakContainer{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#streakText{
+  background-color: rgba(0, 0, 0, 0.468);
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+#streakClear{
+  cursor: pointer;
+  height: 50px;
+  margin-top: 12px;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#streakClear:hover{
+  background-color: rgb(255, 255, 255);
+  border: solid 2px red;
+  color: red;
+}
