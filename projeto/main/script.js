@@ -23,17 +23,11 @@ function checkGuess (){
   const inputElement = document.getElementById("guess");
   const guess = inputElement.value;
   const feedbackElement = document.getElementById("feedback");
-  const audio = document.getElementById("audio");
-  const audio2 = document.getElementById("audio2");
-  const audio3 = document.getElementById("audio3");
-  const audio4 = document.getElementById("audio4");
-  const audio5 = document.getElementById("audio5");
 
   if (guess === "") {
     feedbackElement.innerHTML = "Você precisa digitar um número";
     feedbackElement.style.color = "red";
     attempts++;
-    audio5.play();
     return;
   }
   
@@ -41,7 +35,6 @@ function checkGuess (){
       feedbackElement.innerHTML = "Digite um número maior que 0!";
       feedbackElement.style.color = "red";
       attempts++;
-      audio3.play();
       return;
     }
 
@@ -49,7 +42,6 @@ function checkGuess (){
       feedbackElement.innerHTML = "Digite um valor menor que 100!";
       feedbackElement.style.color = "red";
       attempts++;
-      audio4.play();
       return;
     }
 
@@ -61,21 +53,18 @@ function checkGuess (){
       feedbackElement.innerHTML = `Você Acertou! Sua vitória foi na ${win}ª tentativa.`;
       feedbackElement.style.color = "green";
       document.getElementById("streakText").innerHTML = `🔥 Sequência de vitórias: ${streak}`;
-      audio.play();
       break;
     }
       else if (guess < randomNumber) {
         feedbackElement.innerHTML = `Muito baixo! Tente novamente. ${attempts} tentativas restantes`;
         feedbackElement.style.color = "red";
         win++;
-        audio2.play();
         break;
       }      
         else{
           feedbackElement.innerHTML = `Muito alto! Tente novamente. ${attempts} tentativas restantes`;
           feedbackElement.style.color = "red";
           win++;
-          audio2.play();
           break;
         }
     }
