@@ -2,7 +2,7 @@
 
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 let attempts = 10;
-let win = 0;
+let guessCount = 0;
 let streak = 0;
 let streakSave = localStorage.getItem("streak");
 
@@ -45,31 +45,27 @@ function checkGuess (){
       return;
     }
 
-  while (attempts > 0) {
     if (guess == randomNumber){
-      win++;
+      guessCount++;
       streak++;
       localStorage.setItem("streak", streak);
-      feedbackElement.innerHTML = `Você Acertou! Sua vitória foi na ${win}ª tentativa.`;
+      feedbackElement.innerHTML = `Você Acertou! Sua vitória foi na ${guessCount}ª tentativa.`;
       feedbackElement.style.color = "green";
       document.getElementById("streakText").innerHTML = `🔥 Sequência de vitórias: ${streak}`;
-      break;
+      return;
     }
       else if (guess < randomNumber) {
         feedbackElement.innerHTML = `Muito baixo! Tente novamente. ${attempts} tentativas restantes`;
         feedbackElement.style.color = "red";
-        win++;
-        break;
+        guessCount++;
       }      
         else{
           feedbackElement.innerHTML = `Muito alto! Tente novamente. ${attempts} tentativas restantes`;
           feedbackElement.style.color = "red";
-          win++;
-          break;
+          guessCount++;
         }
-    }
   
-  if (attempts === 0 && guess != randomNumber) {
+  if (attempts === 0) {
       feedbackElement.innerHTML = `Sinto muito, suas tentativas acabaram. O número correto era ${randomNumber}.`;
       feedbackElement.style.color = "red";
       
@@ -77,12 +73,21 @@ function checkGuess (){
       localStorage.setItem("streak", streak);
       document.getElementById("streakText").innerHTML = `🔥 Sequência de vitórias: ${streak}`;
   }
-    }
+}
 
 // Função de reiniciar o jogo
 
 function reiniciar() {
-  location.reload();
+  const guess = document.getElementById('guess');
+  guess.value = '';
+
+  const feedback = document.getElementById('feedback');
+  feedback.innerHTML = ('');
+
+  attempts = 10;
+  guessCount = 0;
+
+  randomNumber = Math.floor(Math.random() * 100) + 1;
 }
 
 // Função de compartilhar o site
@@ -113,7 +118,6 @@ window.onload = function() {
   inputElement.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
       checkGuess();
-    
     }
   });
 
