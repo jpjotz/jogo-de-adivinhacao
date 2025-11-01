@@ -16,7 +16,7 @@ Projeto feito com base nas aulas do site [Mimo](https://mimo.org)
 
 # 🎮 Jogue aqui:
 
-https://4j63lv.mimo.run/index.html
+https://jogo-de-adivinhacao-hazel.vercel.app/
 
 
 
