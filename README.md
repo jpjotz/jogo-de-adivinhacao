@@ -46,8 +46,7 @@ https://jogo-de-adivinhacao-hazel.vercel.app/
 - Código base do projeto: ✅
 - Sistema de reínicio de jogo: ✅
 - Sistema de sequência de vitórias: ✅
-- Sistema de Leaderboard : 🟡 (Em Breve)
-- Lançamento Mobile Nativo: 🟡 (Em Breve)
+- Lançamento Mobile Nativo: ✅ (Somente Android)
 
 ## 📚 Aprendizado
 Com esse projeto, pude aplicar os conhecimentos que adquiri ao longo de algumas semanas no estudo de HTML5, CSS3 e JavaScript, utilizando conceitos de Local Storage, remoção de elementos por ID e coleta de informações de elementos por ID.
