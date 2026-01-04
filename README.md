@@ -33,6 +33,8 @@ https://jogo-de-adivinhacao-hazel.vercel.app/
 
 **Back-end:** Em breve
 
+**Mobile:** Flutter
+
 
 ## 🔧 Funcionalidades
 
@@ -49,4 +51,4 @@ https://jogo-de-adivinhacao-hazel.vercel.app/
 - Lançamento Mobile Nativo: ✅ (Somente Android)
 
 ## 📚 Aprendizado
-Com esse projeto, pude aplicar os conhecimentos que adquiri ao longo de algumas semanas no estudo de HTML5, CSS3 e JavaScript, utilizando conceitos de Local Storage, remoção de elementos por ID e coleta de informações de elementos por ID.
+Com esse projeto, pude aplicar os conhecimentos que adquiri ao longo de algumas semanas no estudo de HTML5, CSS3 e JavaScript, utilizando conceitos de Local Storage, remoção de elementos por ID e coleta de informações de elementos por ID. Além disso, pude compreender melhor acerca do desenvolvimento do aplicativo mobile Feito em Flutter.
